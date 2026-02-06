@@ -13,7 +13,7 @@ NC='\033[0m' # No Color
 
 # Default locations to search (in order of preference)
 CONFIG_LOCATIONS=(".github/.copilot-collections.yaml" ".copilot-collections.yaml")
-TOOLKIT_REPO="https://github.com/canonical/copilot-collections.git"
+TOOLKIT_REPO="https://github.com/Ek0n/copilot-collections.git"
 TEMP_DIR="$(pwd)/copilot-toolkit-temp"
 
 cleanup() {
