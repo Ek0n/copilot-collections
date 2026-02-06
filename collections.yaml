@@ -30,10 +30,8 @@ common-python:
       dest: .github/instructions/python-code-commenting.instructions.md
 
 common-documentation:
-  description: "Documentation standards and review skill"
+  description: "Documentation review skill"
   items:
-    - src: assets/instructions/documentation/documentation.instructions.md
-      dest: .github/instructions/documentation.instructions.md
     - src: assets/skills/documentation-reviewer
       dest: .github/skills/documentation-reviewer/
 
@@ -46,3 +44,21 @@ charm-python:
     - core
     - common-python
   items: []
+
+documentation-generic:
+  description: "Generic Documentation standards"
+  includes:
+    - core
+    - common-documentation
+  items:
+    - src: assets/instructions/documentation/documentation.instructions.md
+      dest: .github/instructions/documentation.instructions.md
+
+documentation-rtd:
+  description: "Read the Docs Specific Documentation"
+  includes:
+    - core
+    - common-documentation
+  items:
+    - src: assets/instructions/documentation/documentation-rtd.instructions.md
+      dest: .github/instructions/documentation-rtd.instructions.md
